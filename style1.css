@@ -1,48 +1,141 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
-  color: #333;
+/* General Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: #f0f8ff; /* Light shade of blue */
+  color: #333;
   padding: 20px;
 }
 
-.container {
-  max-width: 800px;
+/* Main Container */
+.main-container {
+  max-width: 900px;
   margin: auto;
   background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   padding: 20px;
 }
 
-header {
+/* Header Section */
+.header {
   text-align: center;
-  margin-bottom: 30px;
+  padding: 20px;
+  background: #3498db;
+  color: white;
+  border-radius: 10px;
 }
 
-header h1 span {
+.header span {
+  color: #f1c40f;
+}
+
+.tagline {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+/* Highlights Section */
+.highlights ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.highlights ul li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+/* Projects Section */
+.projects .project {
+  margin-top: 20px;
+}
+
+.projects h3 {
   color: #3498db;
 }
 
-.project, .skills, footer {
-  margin-bottom: 20px;
+.projects ul {
+  list-style: circle inside;
+  margin: 10px 0;
 }
 
-ul {
-  padding-left: 20px;
+.projects ul ul {
+  list-style: square inside;
+  margin-left: 20px;
 }
 
-a {
-  color: #3498db;
+/* Skills Section */
+.skills p {
+  margin: 10px 0;
+}
+
+/* Contact Section */
+.contact ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.contact ul li a {
   text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
+.contact ul li a:hover {
+  color: #f1c40f;
 }
 
-blockquote {
+/* Quote Section */
+.quote {
+  text-align: center;
+  margin: 20px 0;
   font-style: italic;
   color: #555;
-  text-align: center;
 }
+
+/* Footer Section */
+.footer {
+  text-align: left;
+  padding: 20px;
+  margin-top: 20px;
+  background: #3498db;
+  color: white;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
+.footer h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer dl {
+  margin: 10px 0;
+}
+
+.footer dt {
+  font-weight: bold;
+}
+
+.footer dd {
+  margin-bottom: 8px;
+  margin-left: 15px;
+}
+
+.footer p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
