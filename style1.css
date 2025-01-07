@@ -1,11 +1,11 @@
 /* General Styles */
 body {
-  font-family: 'Roboto', Arial, sans-serif;
-  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
-  background: #f9f9f9;
+  background-color: #f4f4f9;
+  color: #2d2d2d;
+  line-height: 1.6;
 }
 
 h1, h2, h3, p, ul {
@@ -14,37 +14,38 @@ h1, h2, h3, p, ul {
 
 a {
   text-decoration: none;
-  color: #0077b6;
-  transition: color 0.3s ease;
+  color: #6c63ff;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  color: #023e8a;
+  color: #5146ff;
 }
 
 .main-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 85%;
+  max-width: 1100px;
+  margin: 2rem auto;
   padding: 2rem;
   background: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Header Styles */
+/* Header Section */
 .header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .header h1 {
-  font-size: 2.5rem;
-  color: #0077b6;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #6c63ff;
 }
 
 .header h1 span {
-  color: #023e8a;
+  color: #2d2d2d;
 }
 
 .header .tagline {
@@ -53,76 +54,70 @@ a:hover {
 }
 
 /* Highlights Section */
-.highlights {
-  margin-bottom: 2rem;
-}
-
 .highlights h2 {
-  color: #023e8a;
+  font-size: 2rem;
+  color: #5146ff;
 }
 
 .highlights ul {
-  list-style-type: none;
-  padding-left: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .highlights li {
-  background: #e3f2fd;
+  background: #e4e4fc;
   padding: 1rem;
-  margin: 0.5rem 0;
-  border-left: 5px solid #0077b6;
+  margin-bottom: 1rem;
+  border-left: 6px solid #6c63ff;
+  border-radius: 6px;
+  color: #2d2d2d;
 }
 
 /* Projects Section */
-.projects {
-  margin-bottom: 2rem;
-}
-
 .projects h2 {
-  color: #023e8a;
+  font-size: 2rem;
+  color: #5146ff;
 }
 
 .project {
-  background: #f1f5f9;
+  background: #f8f8ff;
   padding: 1.5rem;
-  border-radius: 8px;
-  border: 1px solid #d0d7de;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .project h3 {
-  color: #0077b6;
+  color: #6c63ff;
+  font-weight: 600;
 }
 
 .project ul {
+  list-style: square;
   padding-left: 1.5rem;
-  list-style-type: square;
 }
 
 .project ul ul {
-  list-style-type: disc;
+  list-style: disc;
   padding-left: 1.5rem;
 }
 
 /* Skills Section */
-.skills {
-  margin-bottom: 2rem;
-}
-
 .skills h2 {
-  color: #023e8a;
+  font-size: 2rem;
+  color: #5146ff;
 }
 
 .skills p {
   margin: 0.5rem 0;
+  font-weight: 500;
+  color: #333;
 }
 
 /* Contact Section */
-.contact {
-  margin-bottom: 2rem;
-}
-
 .contact h2 {
-  color: #023e8a;
+  font-size: 2rem;
+  color: #5146ff;
 }
 
 .contact ul {
@@ -131,12 +126,12 @@ a:hover {
 }
 
 .contact li {
-  margin: 0.5rem 0;
+  margin-bottom: 0.5rem;
 }
 
 .contact a {
-  color: #0077b6;
-  font-weight: bold;
+  color: #6c63ff;
+  font-weight: 600;
 }
 
 /* Quote Section */
@@ -144,42 +139,44 @@ a:hover {
   margin: 2rem 0;
   text-align: center;
   font-style: italic;
+  background: #f0f0fa;
+  padding: 1.2rem;
+  border-left: 6px solid #5146ff;
+  border-radius: 8px;
   color: #555;
-  background: #e9ecef;
-  padding: 1rem;
-  border-left: 5px solid #0077b6;
-  border-radius: 5px;
 }
 
-/* Footer Styles */
+/* Footer Section */
 .footer {
+  background-color: #6c63ff;
+  color: #ffffff;
+  padding: 2rem;
   text-align: center;
-  padding: 1.5rem;
-  background: #0077b6;
-  color: #fff;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 12px 12px;
 }
 
 .footer h3 {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .footer dl {
-  text-align: left;
-  margin: 0 auto 1rem;
   display: inline-block;
+  text-align: left;
+  margin-bottom: 1rem;
 }
 
 .footer dt {
   font-weight: bold;
-  color: #ffdd99;
+  color: #eaeaff;
 }
 
 .footer dd {
   margin: 0 0 0.5rem;
+  color: #fff;
 }
 
 .footer p {
-  margin-top: 1rem;
   font-size: 0.9rem;
+  margin-top: 1rem;
 }
